@@ -122,12 +122,7 @@ namespace CapaPresentacion
                 {
                     MessageBox.Show(mensaje);
                 }
-            }
-
-
-
-
-            
+            }    
         }
 
         private void Limpiar()
@@ -255,6 +250,11 @@ namespace CapaPresentacion
             {
                 row.Visible = true;
             }
+        }
+
+        private void btnLimpiador_Click(object sender, EventArgs e)
+        {
+            Limpiar();
         }
     }
 }
