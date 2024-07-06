@@ -41,7 +41,7 @@ namespace CapaPresentacion
 
             foreach (DataGridViewColumn columna in dgvData.Columns)
             {
-                if (columna.Visible == true && columna.Name != "btnSeleccionar")
+                if (columna.Visible == true)
                 {
                     cboBusqueda.Items.Add(new OpcionCombo() { Valor = columna.Name, Texto = columna.HeaderText }); 
                 }
@@ -50,7 +50,6 @@ namespace CapaPresentacion
             cboBusqueda.ValueMember = "Valor";
             cboBusqueda.SelectedIndex = 0;
 
-            //Mostrar todos los usuarios
             List<Usuario> listaUsuario = new CN_Usuario().listar();
 
             foreach (Usuario item in listaUsuario)
