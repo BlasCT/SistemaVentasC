@@ -77,6 +77,6 @@ namespace CapaNegocio
         public bool Eliminar(Producto obj, out string Mensaje)
         {
             return objCdProducto.Eliminar(obj, out Mensaje);
-        }
+        }  
     }
 }
