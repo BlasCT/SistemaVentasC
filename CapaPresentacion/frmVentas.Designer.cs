@@ -42,6 +42,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.txtCantidadProducto = new System.Windows.Forms.NumericUpDown();
             this.txtIdProducto = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.txtStock = new System.Windows.Forms.TextBox();
@@ -55,6 +56,12 @@
             this.label8 = new System.Windows.Forms.Label();
             this.btnAgregarProducto = new System.Windows.Forms.Button();
             this.dgvData = new System.Windows.Forms.DataGridView();
+            this.IdProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SubTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnEliminar = new System.Windows.Forms.DataGridViewButtonColumn();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
@@ -62,18 +69,11 @@
             this.txtPagaCon = new System.Windows.Forms.TextBox();
             this.txtCambio = new System.Windows.Forms.TextBox();
             this.btnCrearVenta = new System.Windows.Forms.Button();
-            this.txtCantidadProducto = new System.Windows.Forms.NumericUpDown();
-            this.IdProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SubTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnEliminar = new System.Windows.Forms.DataGridViewButtonColumn();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvData)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCantidadProducto)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvData)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -241,6 +241,13 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Información de producto";
             // 
+            // txtCantidadProducto
+            // 
+            this.txtCantidadProducto.Location = new System.Drawing.Point(448, 58);
+            this.txtCantidadProducto.Name = "txtCantidadProducto";
+            this.txtCantidadProducto.Size = new System.Drawing.Size(79, 20);
+            this.txtCantidadProducto.TabIndex = 37;
+            // 
             // txtIdProducto
             // 
             this.txtIdProducto.Location = new System.Drawing.Point(109, 34);
@@ -381,6 +388,55 @@
             this.dgvData.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvData_CellContentClick);
             this.dgvData.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.dgvData_CellPainting);
             // 
+            // IdProducto
+            // 
+            this.IdProducto.HeaderText = "IdProducto";
+            this.IdProducto.MinimumWidth = 6;
+            this.IdProducto.Name = "IdProducto";
+            this.IdProducto.ReadOnly = true;
+            this.IdProducto.Visible = false;
+            this.IdProducto.Width = 125;
+            // 
+            // Producto
+            // 
+            this.Producto.HeaderText = "Producto";
+            this.Producto.MinimumWidth = 6;
+            this.Producto.Name = "Producto";
+            this.Producto.ReadOnly = true;
+            this.Producto.Width = 125;
+            // 
+            // Precio
+            // 
+            this.Precio.HeaderText = "Precio";
+            this.Precio.MinimumWidth = 6;
+            this.Precio.Name = "Precio";
+            this.Precio.ReadOnly = true;
+            this.Precio.Width = 125;
+            // 
+            // Cantidad
+            // 
+            this.Cantidad.HeaderText = "Cantidad";
+            this.Cantidad.MinimumWidth = 6;
+            this.Cantidad.Name = "Cantidad";
+            this.Cantidad.ReadOnly = true;
+            this.Cantidad.Width = 125;
+            // 
+            // SubTotal
+            // 
+            this.SubTotal.HeaderText = "Sub Total";
+            this.SubTotal.MinimumWidth = 6;
+            this.SubTotal.Name = "SubTotal";
+            this.SubTotal.ReadOnly = true;
+            this.SubTotal.Width = 125;
+            // 
+            // btnEliminar
+            // 
+            this.btnEliminar.HeaderText = "";
+            this.btnEliminar.MinimumWidth = 6;
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.ReadOnly = true;
+            this.btnEliminar.Width = 25;
+            // 
             // label12
             // 
             this.label12.AutoSize = true;
@@ -450,62 +506,7 @@
             this.btnCrearVenta.TabIndex = 42;
             this.btnCrearVenta.Text = "Crear venta";
             this.btnCrearVenta.UseVisualStyleBackColor = true;
-            // 
-            // txtCantidadProducto
-            // 
-            this.txtCantidadProducto.Location = new System.Drawing.Point(448, 58);
-            this.txtCantidadProducto.Name = "txtCantidadProducto";
-            this.txtCantidadProducto.Size = new System.Drawing.Size(79, 20);
-            this.txtCantidadProducto.TabIndex = 37;
-            // 
-            // IdProducto
-            // 
-            this.IdProducto.HeaderText = "IdProducto";
-            this.IdProducto.MinimumWidth = 6;
-            this.IdProducto.Name = "IdProducto";
-            this.IdProducto.ReadOnly = true;
-            this.IdProducto.Visible = false;
-            this.IdProducto.Width = 125;
-            // 
-            // Producto
-            // 
-            this.Producto.HeaderText = "Producto";
-            this.Producto.MinimumWidth = 6;
-            this.Producto.Name = "Producto";
-            this.Producto.ReadOnly = true;
-            this.Producto.Width = 125;
-            // 
-            // Precio
-            // 
-            this.Precio.HeaderText = "Precio";
-            this.Precio.MinimumWidth = 6;
-            this.Precio.Name = "Precio";
-            this.Precio.ReadOnly = true;
-            this.Precio.Width = 125;
-            // 
-            // Cantidad
-            // 
-            this.Cantidad.HeaderText = "Cantidad";
-            this.Cantidad.MinimumWidth = 6;
-            this.Cantidad.Name = "Cantidad";
-            this.Cantidad.ReadOnly = true;
-            this.Cantidad.Width = 125;
-            // 
-            // SubTotal
-            // 
-            this.SubTotal.HeaderText = "Sub Total";
-            this.SubTotal.MinimumWidth = 6;
-            this.SubTotal.Name = "SubTotal";
-            this.SubTotal.ReadOnly = true;
-            this.SubTotal.Width = 125;
-            // 
-            // btnEliminar
-            // 
-            this.btnEliminar.HeaderText = "";
-            this.btnEliminar.MinimumWidth = 6;
-            this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.ReadOnly = true;
-            this.btnEliminar.Width = 25;
+            this.btnCrearVenta.Click += new System.EventHandler(this.btnCrearVenta_Click);
             // 
             // frmVentas
             // 
@@ -536,8 +537,8 @@
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvData)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCantidadProducto)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvData)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
