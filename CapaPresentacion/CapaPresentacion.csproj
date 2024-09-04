@@ -200,6 +200,9 @@
     <EmbeddedResource Include="frmVerDetalleCompra.resx">
       <DependentUpon>frmVerDetalleCompra.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmVerDetalleVenta.resx">
+      <DependentUpon>frmVerDetalleVenta.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Inicio.resx">
       <DependentUpon>Inicio.cs</DependentUpon>
     </EmbeddedResource>
@@ -272,6 +275,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\PlantillaCompra.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PlantillaVenta.html" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
