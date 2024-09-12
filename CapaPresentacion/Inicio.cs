@@ -10,6 +10,7 @@ using System.Windows.Forms;
 
 using CapaEntidad;
 using CapaNegocio;
+using CapaPresentacion.Modales;
 
 namespace CapaPresentacion
 {
@@ -114,16 +115,25 @@ namespace CapaPresentacion
             AbrirFormulario((ToolStripMenuItem)sender, new frmProveedores());
         }
 
-
-        private void menuReportes_Click_1(object sender, EventArgs e)
-        {
-            AbrirFormulario((ToolStripMenuItem)sender, new frmReportes());
-
-        }
-
         private void subMenuNegocio_Click(object sender, EventArgs e)
         {
             AbrirFormulario(menuMantenedor, new frmNegocio());
+        }
+
+        private void subMenuReporteCompras_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(menuReportes, new frmReporteCompras());
+        }
+
+        private void subMenuReporteVentas_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(menuReportes, new frmReporteVentas());
+        }
+
+        private void menuAcercaDe_Click(object sender, EventArgs e)
+        {
+            mdAcercaDe md = new mdAcercaDe();
+            md.ShowDialog();
         }
     }
 }
